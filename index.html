@@ -53,7 +53,7 @@
           <div class="h2 title">Parmida Ghahremani</div>
           <p class="category text-white">Computer Vision and Deep Learning Research Scientist</p>
 <!--          <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a>-->
-          <a class="btn btn-primary" href="Parmida_Ghahremani_CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+          <a class="btn btn-primary" href="Parmida_Ghahremani__CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
         </div>
       </div>
       <div class="section">
@@ -132,7 +132,13 @@
                 <a href="https://www.biorxiv.org/content/10.1101/2021.05.01.442219v4">Paper</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://github.com/nadeemlab/DeepLIIF">GitHub Repository</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://deepliif.org/">DeepLIIF Website</a></p>
-                <p style="margin:15px;">By creating a multitask deep learning framework referred to as DeepLIIF, we present a single-step solution to nuclear segmentation and quantitative single-cell IHC scoring. Leveraging a unique de novo dataset of co-registered IHC and multiplex immunofluorescence (mpIF) data generated from the same tissue section, we simultaneously segment and translate low-cost and prevalent IHC slides to more expensive-yet-informative mpIF images. We show that our model trained on clean IHC Ki67 data can generalize to more noisy and artifact-ridden images as well as other nuclear and non-nuclear markers.</p>
+                <ul style="margin:15px;">
+                  <li>Designed and implemented a GAN-Based multitask deep learning model for single-step translation, segmentation, and classification. Achieved this by designing a universal optimizer and weighted loss function, outperforming state-of-the-art models such as Mask-RCNN and nnUNet on segmentation and classification tasks.</li>
+                  <li>Designed and implemented a GAN-based image synthesis model for generating high fidelity IHC images using corresponding Hematoxylin and Marker images by defining style- and feature-based loss function.</li>
+                  <li>Developed a framework offering rigid transformations for co-registering IHC and mpIF data using Tkinter python interface.</li>
+                  <li>Implemented computer vision algorithms for pre- and post-processing data using skimage, scipy, numba, and matplotlib.</li>
+                </ul>
+<!--                <p style="margin:15px;">By creating a multitask deep learning framework referred to as DeepLIIF, we present a single-step solution to nuclear segmentation and quantitative single-cell IHC scoring. Leveraging a unique de novo dataset of co-registered IHC and multiplex immunofluorescence (mpIF) data generated from the same tissue section, we simultaneously segment and translate low-cost and prevalent IHC slides to more expensive-yet-informative mpIF images. We show that our model trained on clean IHC Ki67 data can generalize to more noisy and artifact-ridden images as well as other nuclear and non-nuclear markers.</p>-->
             </div>
           </div>
             
@@ -142,7 +148,13 @@
                   </figure>
                   <p style="text-align: center">
                   <a href="https://ieeexplore.ieee.org/abstract/document/9529035">Paper</a></p>
-                <p style="margin:15px;">We introduce NeuroConstruct, a novel end-to-end application for segmentation, registration, and visualization of brain volumes imaged using wide-field microscopy. NeuroConstruct offers a Segmentation Toolbox to manually/automatically annotate micrometer resolution neurites. To visualize neurites, NeuroConstruct offers a hybrid rendering by combining iso-surface rendering of classified neurites, along with real-time rendering of raw volume using a 2D TF for classification score vs. intensity value. It also offers a Registration Toolbox that provides automatic coarse-to-fine alignment of serially sectioned samples.</p>
+                  <ul style="margin:15px;">
+                    <li>Developed an end-to-end application (NeuroConstruct) for reconstruction and visualization of 3D neuronal structures.</li>
+                    <li>Designed and implemented a novel 3D nested UNet-based network with skip pathways for segmenting objects in volumes using Tensorflow and Keras, outperforming state-of-the-art models including U2Net, UNet++, and UNet3+.</li>
+                    <li>Designed a hybrid rendering approach, combining iso-surface rendering of high-confidence classified neurites, along with real-time rendering of raw volume.</li>
+                    <li>Created segmentation and registration toolbox for auto \& manual segmentation of neurons and coarse-to-fine alignment of serial brain sections with 3D rendered volume, 2D cross-sectional views, and novel annotation functions using PyQt5 and vtk.</li>
+                  </ul>
+<!--                <p style="margin:15px;">We introduce NeuroConstruct, a novel end-to-end application for segmentation, registration, and visualization of brain volumes imaged using wide-field microscopy. NeuroConstruct offers a Segmentation Toolbox to manually/automatically annotate micrometer resolution neurites. To visualize neurites, NeuroConstruct offers a hybrid rendering by combining iso-surface rendering of classified neurites, along with real-time rendering of raw volume using a 2D TF for classification score vs. intensity value. It also offers a Registration Toolbox that provides automatic coarse-to-fine alignment of serially sectioned samples.</p>-->
             </div>
           </div>
         </div>
@@ -153,7 +165,12 @@
                   </figure>
                   <p style="text-align: center">
               <a href="">Paper</a></p>
-                <p style="margin:15px;">In recent years, deep convolutional neural networks have shown tremendous success in solving many biomedical tasks. However, the development of deep convolutional networks requires access to large quantities of high-quality annotated images for training and evaluation. As image annotation is a tedious task for biomedical experts, recruiting non-expert crowd workers can be an economical and efficient way to provide a rich dataset of annotated images.  We first present CrowdDeep, a novel technique to improve the segmentation accuracy of deep learning models trained with expert annotation on H&E slides using the crowd-annotated data.</p>
+              <ul style="margin:15px;">
+                <li>Created a semi-automatic crowdsourcing framework for nuclei segmentation in pathology slides, allowing publication of jobs containing question and judgment phases on Amazon Mechanical Turk for collecting ground-truth segmentation dataset.</li>
+                <li>Designed and implemented a novel CNN approach (CrowdDeep) for nuclei segmentation using a combination of crowd and expert annotations, outperforming expert-trained-only models.</li>
+                <li>Developed a visual analytic framework for evaluation of CrowdDeep using D3 visualization.</li>
+              </ul>
+<!--                <p style="margin:15px;">In recent years, deep convolutional neural networks have shown tremendous success in solving many biomedical tasks. However, the development of deep convolutional networks requires access to large quantities of high-quality annotated images for training and evaluation. As image annotation is a tedious task for biomedical experts, recruiting non-expert crowd workers can be an economical and efficient way to provide a rich dataset of annotated images.  We first present CrowdDeep, a novel technique to improve the segmentation accuracy of deep learning models trained with expert annotation on H&E slides using the crowd-annotated data.</p>-->
             </div>
           </div>
             
@@ -163,7 +180,12 @@
                   </figure>
                   <p style="text-align: center">
                   <a href="https://ieeexplore.ieee.org/abstract/document/8797777">Paper</a></p>
-                <p style="margin:15px;">We focused on visualizing and navigating large omnidirectional or panoramic images with application to GIS visualization as an inside-out omnidirectional image of the earth using UnityR Game Engine, HTC Vive headset and controllers. Then, we conducted two user studies involving 40 people and 185 individual cases, to evaluate our techniques over a search and comparison task. Our results illustrate the advantages of our techniques for navigation and exploration of omnidirectional images in an immersive environment such as less mental load and greater flexibility.</p>
+
+                  <ul style="margin:15px;">
+                    <li>Conducted two VR user studies to evaluate our techniques over a search and comparison task using Unity Game Engine, HTC Vive headset, and controllers.</li>
+                    <li>Performed quantitave analysis in R to evaluate our novel approaches against state-of-the-art methods using traditional and proposed questionnaires and metrics including SSQ, NASA-TLX, Presence, Performance, Tapping Test, and Movement with two-way RANOVA and Tukey's ladder of power.</li>
+                  </ul>
+<!--                <p style="margin:15px;">We focused on visualizing and navigating large omnidirectional or panoramic images with application to GIS visualization as an inside-out omnidirectional image of the earth using UnityR Game Engine, HTC Vive headset and controllers. Then, we conducted two user studies involving 40 people and 185 individual cases, to evaluate our techniques over a search and comparison task. Our results illustrate the advantages of our techniques for navigation and exploration of omnidirectional images in an immersive environment such as less mental load and greater flexibility.</p>-->
             </div>
             </div>
           </div>
@@ -246,7 +268,7 @@
         <div class="col-md-9" data-aos="fade-up" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h6">Graduate Research Intern</div>
-            <p>IHC Quantification and Nuclei and Membrane Segmentation using Deep Learning.</p>
+            <p>Designed deep learning approaches for cell and membrane segmentation in IHC and fluorescence microscopy images.</p>
           </div>
         </div>
       </div>
